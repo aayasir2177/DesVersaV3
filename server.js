@@ -18,10 +18,10 @@ app.get("^/$|ebook-service(.html)?", (req, res) => {
   res.sendFile(path.join(__dirname, "views", "ebook-service.html"));
 });
 app.get("^/$|brand-service(.html)?", (req, res) => {
-  res.sendFile(path.join(__dirname, "views", "about.html"));
+  res.sendFile(path.join(__dirname, "views", "brand-service.html"));
 });
 app.get("^/$|website-service(.html)?", (req, res) => {
-  res.sendFile(path.join(__dirname, "views", "about.html"));
+  res.sendFile(path.join(__dirname, "views", "website-service.html"));
 });
 
 app.get("^/$|portfolio(.html)?", (req, res) => {
