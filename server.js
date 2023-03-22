@@ -30,6 +30,9 @@ app.get("^/$|portfolio(.html)?", (req, res) => {
 app.get("^/$|contact(.html)?", (req, res) => {
   res.sendFile(path.join(__dirname, "views", "contact.html"));
 });
+app.get("^/$|terms-of-service(.html)?", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "tos.html"));
+});
 app.get("/*", (req, res) => {
   res.sendFile(path.join(__dirname, "views", "404.html"));
 });
